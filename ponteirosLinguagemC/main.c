@@ -13,8 +13,8 @@ void troca(int *x, int *y)
 	*x = *y;
 	//y recebe o valor antigo de X, que foi armazenado em temp
 	*y = temp;
-	printf("valor de x em troca(): %d \n", *x);
-	printf("valor de y em troca(): %d \n", *y);
+	printf("valor de x em troca(): %d \n", *x);//* -> mostra o valor que está sendo apontado por X 
+	printf("valor de y em troca(): %d \n", *y);//* -> mostra o valor que está sendo apontado por y 
 	
 }
 
@@ -28,7 +28,7 @@ int main()
 	printf("Valor de b antes da troca() %d \n", b);
 	
 	//a e b representam X e y na função troca 
-	troca(&a,&b);
+	troca(&a,&b);//& -> mostra o endereço de a e de b
 	
 	printf("Valor de a depois da troca: %d \n", a);
 	printf("Valor de b depois da troca %d \n", b);
